@@ -1,0 +1,54 @@
+@import url("../fonts/google-fonts.min.css");
+
+body {
+    position: relative;
+    font-family: Manrope, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+pre {
+    white-space: pre-wrap; /* This ensures long lines wrap properly */
+    word-wrap: break-word; /* This forces long words (like URLs) to break */
+}
+
+code {
+    white-space: pre-wrap; /* This ensures long lines wrap properly */
+}
+
+/* Highlighted code styles */
+.highlight {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    padding: 0;
+    overflow-x: auto;
+    font-family: "Fira Mono", monospace;
+    font-size: 12px; /* Set default font size for code */
+    line-height: 20px;
+}
+
+/* Token-specific styles (for finer control) */
+.highlight .c { font-size: 12px; } /* Comment */
+.highlight .err { font-size: 12px; } /* Error */
+.highlight .l { font-size: 12px; } /* Literal */
+.highlight .n { font-size: 12px; } /* Name */
+.highlight .k { font-size: 12px; } /* Keyword */
+
+/* Additional styles */
+.element {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .responsive-element {
+        padding: 10px;
+    }
+}
+
+.dark-theme [class*="highlight-"] .highlight {
+    color: #fff;
+    background-color: #333;
+}

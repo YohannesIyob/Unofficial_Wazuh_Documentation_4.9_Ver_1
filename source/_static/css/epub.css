@@ -1,0 +1,69 @@
+
+/*..... font trial in body text........................*/
+
+@import url("../fonts/google-fonts.min.css");
+
+body {
+    position: relative;
+    font-family: Manrope, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+pre {
+    white-space: pre-wrap; /* This ensures long lines wrap properly */
+    word-wrap: break-word; /* This forces long words (like URLs) to break */
+}
+
+div.reference.external .link-target {
+    all: unset !important; /* Resets all properties */
+}
+
+
+code {
+    white-space: pre-wrap; /* This ensures long lines wrap properly */
+}
+
+/* Highlighted code styles */
+.highlight {
+    position: relative;
+    z-index: 0;
+    display: block;
+    padding: 0;
+    font-size: 11px; /* Set default font size for code */
+    line-height: 18px;
+}
+
+/* Token-specific styles (for finer control) */
+.highlight .c { font-size: 11px; } /* Comment */
+.highlight .err { font-size: 11px; } /* Error */
+.highlight .l { font-size: 11px; } /* Literal */
+.highlight .n { font-size: 11px; } /* Name */
+.highlight .k { font-size: 11px; } /* Keyword */
+
+/* Additional styles */
+.element {
+    background-color: #f0f0f0;
+}
+
+/* literal inclosed texts between two backticks..*/
+.docutils.literal.notranslate .pre {
+    color: #7c3db2; /* Red text color */
+    background-color: #e2eefe; /* Light blue background color */
+    padding: 2px 4px; /* Padding to make the text stand out */
+    border-radius: 3px; /* Rounded corners */
+    font-weight: normal; /* Ensures the text is not bold */
+}
+
+/* Apply normal spacing for all links */
+a {
+    display: inline; /* Ensures the link stays inline */
+    margin: 0; /* Removes any margin */
+    padding: 0; /* Removes any padding */
+    line-height: normal; /* Resets line height to normal */
+    word-spacing: normal; /* Resets word spacing to normal */
+}
+
+
